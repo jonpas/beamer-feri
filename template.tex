@@ -1,0 +1,88 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Beamer predloga za zaključna dela na Univerzi v Mariboru
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% !!! UPORABI LuaLaTeX PREVAJALNIK !!!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[slovene]{beamer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% PAKETI
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% TEMA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usetheme{feri}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% NASLOVNA STRAN IN NASLOVI
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{NASLOV ZAKLJUČNEGA DELA}
+\subtitle{Naslov} % na vrhu vsakega slide-a
+\author{Ime in priimek avtorja}
+\institute{Naziv, ime in priimek mentorja oz. morebitnega somentorja}
+\date{Datum zagovora}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ZAČETEK PREDSTAVITVE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+{
+    \setbeamertemplate{footline}{} % brez noge
+    \begin{frame}
+        \titlepage
+    \end{frame}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% VSEBINA PREDSTAVITVE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+    \frametitle{UVOD}
+    \begin{itemize}
+    \item Zajema naj namen dela, področje, na katero se delo nanaša, uporabljene metode
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{PREDSTAVITEV PROBLEMA}
+\end{frame}
+
+\begin{frame}
+    \frametitle{OPIS REŠITVE}
+\end{frame}
+
+\begin{frame}
+    \frametitle{REZULTATI}
+\end{frame}
+
+\begin{frame}
+    \frametitle{POVZETEK}
+    Podamo objektivno oceno rezultatov
+\end{frame}
+
+\begin{frame}
+    \frametitle{DODATNI PRIMERI}
+    \begin{theorem}
+    There is no largest prime number.
+    \end{theorem}
+    \begin{enumerate}
+    \item<1-| alert@1> Suppose $p$ were the largest prime number.
+    \item<2-> Let $q$ be the product of the first $p$ numbers.
+    \item<3-> Then $q+1$ is not divisible by any of them.
+    \item<1-> But $q + 1$ is greater than $1$, thus divisible by some prime
+    number not in the first $p$ numbers.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{A longer title}
+    \begin{itemize}
+    \item one
+    \item two
+    \end{itemize}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,38 @@
+\mode<presentation>
+
+\usepackage{tikz}
+
+% Frame header and title
+\defbeamertemplate*{frametitle}{feri}[1][]{
+    \vspace{-\baselineskip}
+    \hspace{-\baselineskip}
+
+    \begin{beamercolorbox}[wd=\paperwidth,ht=0.7cm]{frametitle}
+    \begin{tikzpicture}
+        \useasboundingbox[fill=white](0,0) rectangle(\the\paperwidth,1.2);
+        \node[anchor=west] (image) at (0, 0.45){
+            \hspace{-0.35cm}
+            \includegraphics[width=11.25cm]{img/topline}
+        };
+        \node[anchor=west] at (11.15, 0.42){
+            \includegraphics[width=1.2cm]{img/logo-feri}
+        };
+        \node[anchor=west,white,font=\large] at (0, 0.425){
+            \usebeamerfont{subtitle}\insertsubtitle
+        };
+    \end{tikzpicture}
+    \end{beamercolorbox}
+
+    \usebeamerfont{title}\insertframetitle%
+    \vskip0.25cm
+    \usebeamerfont{frame subtitle}\insertframesubtitle%
+}
+
+% Navigation symbols
+\defbeamertemplate*{footline}{feri}[1][]{%
+    \hfill\insertframenumber%
+    \hspace{0.1cm}
+    \vspace{0.15cm}
+}
+
+\mode<all>

@@ -1,0 +1,39 @@
+\mode<presentation>
+
+% Title page
+\defbeamertemplate*{title page}{feri}[1][]{
+    \vspace{-\baselineskip}
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \hskip1.25cm
+            \includegraphics[height=1.5cm]{img/logotip-UM}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \hskip0.5cm
+            \includegraphics[height=1.5cm]{img/logo-feri}
+        \end{column}
+    \end{columns}
+
+    \vskip0.5cm%
+    \begin{beamercolorbox}[wd=11cm,leftskip=0cm,sep=8pt,#1]{title page header}
+        \begin{flushright}
+            \usebeamerfont{title}\inserttitle\par%
+        \end{flushright}
+    \end{beamercolorbox}%
+
+    \vskip0.75cm%
+    \begin{beamercolorbox}[wd=10.75cm,leftskip=0cm,#1]{author}
+        \hfill\usebeamerfont{author}\insertauthor%
+    \end{beamercolorbox}
+    \vskip0.2cm%
+    \begin{beamercolorbox}[wd=10.75cm,leftskip=0cm,#1]{date}
+        \hfill\usebeamerfont{institute}\insertinstitute%
+    \end{beamercolorbox}
+    \vskip0.2cm%
+    \begin{beamercolorbox}[wd=10.75cm,leftskip=0cm,#1]{date}
+        \hfill\usebeamerfont{date}\insertdate%
+    \end{beamercolorbox}
+    \vfill
+}
+
+\mode<all>
