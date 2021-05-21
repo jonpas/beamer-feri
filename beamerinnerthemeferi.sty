@@ -2,7 +2,6 @@
 
 % Title page
 \defbeamertemplate*{title page}{feri}[1][]{
-    \vspace{-\baselineskip}
     \begin{columns}[T]
         \begin{column}{0.5\textwidth}
             \hskip1.25cm
@@ -14,31 +13,18 @@
         \end{column}
     \end{columns}
 
-    \vskip0.5cm%
-    \begin{beamercolorbox}[wd=11cm,leftskip=0cm,sep=8pt,#1]{title page header}
-        \begin{flushright}
-            \usebeamerfont{title}\inserttitle\par%
-        \end{flushright}
-    \end{beamercolorbox}%
+    \vskip1cm%
 
-    \vskip0.75cm%
-    \begin{beamercolorbox}[wd=10.75cm,leftskip=0cm,#1]{author}
-        \begin{flushright}
-            \hfill\usebeamerfont{author}\insertauthor%
-        \end{flushright}
-    \end{beamercolorbox}
-    \vskip0.2cm%
-    \begin{beamercolorbox}[wd=10.75cm,leftskip=0cm,#1]{date}
-        \begin{flushright}
-            \hfill\usebeamerfont{institute}\insertinstitute%
-        \end{flushright}
-    \end{beamercolorbox}
-    \vskip0.2cm%
-    \begin{beamercolorbox}[wd=10.75cm,leftskip=0cm,#1]{date}
-        \begin{flushright}
-            \hfill\usebeamerfont{date}\insertdate%
-        \end{flushright}
-    \end{beamercolorbox}
+    \begin{flushright}
+        \hfill\usebeamerfont{title}\inserttitle\par%
+        \vskip0.75cm%
+        \hfill\usebeamerfont{author}\insertauthor%
+        \vskip0.2cm%
+        \hfill\usebeamerfont{institute}\insertinstitute%
+        \vskip0.2cm%
+        \hfill\usebeamerfont{date}\insertdate%
+    \end{flushright}
+
     \vfill
 }
 
