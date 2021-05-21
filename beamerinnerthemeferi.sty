@@ -23,15 +23,21 @@
 
     \vskip0.75cm%
     \begin{beamercolorbox}[wd=10.75cm,leftskip=0cm,#1]{author}
-        \hfill\usebeamerfont{author}\insertauthor%
+        \begin{flushright}
+            \hfill\usebeamerfont{author}\insertauthor%
+        \end{flushright}
     \end{beamercolorbox}
     \vskip0.2cm%
     \begin{beamercolorbox}[wd=10.75cm,leftskip=0cm,#1]{date}
-        \hfill\usebeamerfont{institute}\insertinstitute%
+        \begin{flushright}
+            \hfill\usebeamerfont{institute}\insertinstitute%
+        \end{flushright}
     \end{beamercolorbox}
     \vskip0.2cm%
     \begin{beamercolorbox}[wd=10.75cm,leftskip=0cm,#1]{date}
-        \hfill\usebeamerfont{date}\insertdate%
+        \begin{flushright}
+            \hfill\usebeamerfont{date}\insertdate%
+        \end{flushright}
     \end{beamercolorbox}
     \vfill
 }
