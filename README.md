@@ -8,7 +8,7 @@ This is the ideal way to use this theme with ability to easily update it via git
 
 - Add theme as git submodule
     ```
-    $ git sobmodule add https://github.com/jonpas/beamer-feri
+    $ git submodule add https://github.com/jonpas/beamer-feri
     ```
 - Copy required files
     ```
